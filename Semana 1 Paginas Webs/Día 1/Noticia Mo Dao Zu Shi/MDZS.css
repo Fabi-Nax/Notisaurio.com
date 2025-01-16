@@ -1,0 +1,35 @@
+.noticia {
+    background-color: #f4f4ff; 
+    border: 1px solid #a6d0ca;    
+    padding: 60px 160px;
+    font-family: 'Times New Roman', Times, serif, sans-serif;              
+    margin: 10px;  
+}
+
+.titulo {
+    font-size: 56px;   
+    font-weight: bold; 
+    color: #000000;       
+}
+
+.subtitulo{
+    font-size: 23px;
+    margin: 20px;
+    color: #2b2b2b;
+}
+
+.image{
+    width: 300px;
+    float: left;
+    margin-right: 20px;
+    border-radius: 20px;
+}
+
+.contenido {
+    font-size: 20px; 
+    color: #2b2b2b;
+}
+
+p{
+    font-size: 25px;
+}

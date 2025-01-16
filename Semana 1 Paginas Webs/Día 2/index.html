@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notisaurios.com</title>
+    <link rel="icon" href="/Día 1/paleontologiachilena.ico.png" type="image/x-icon">
+    <link rel="stylesheet" href="flexusos.css" />
+    <style>
+
+    </style>
+</head>
+
+<div class="Todo">
+    <nav class="colores" id="colores"> Búsqueda de dinosaurios
+        <div class="barra">
+            <img src="/Día 2/lupa.pnj.webp" class="lupa" alt="Lupa" id="imagen">
+        </div>
+    </nav>
+
+    <section class="section1">
+        <div class="div1">
+            <p>Nueva especie descubierta en Latinoamérica.</p>
+            <a href="/Día 1/noticia.html" target="_blank">
+                <img src="/Día 1/Brontosaurus.webp" alt="Foto referencial de Martinsaurio." id="imagen">
+            </a>
+        </div>
+
+        <div class="div1">
+            <p>Nueva adaptación confirmada de MDZS.</p>
+            <a href="/Día 1/Noticia Mo Dao Zu Shi/Noticia MDZS.html" target="_blank">
+                <img src="/Día 1/Noticia Mo Dao Zu Shi/mdzsimagen.jpg" alt="Foto de Mo Dao Zu Shi." id="imagen">
+            </a>
+        </div>
+
+        <div class="div1">
+            <p>Descubre el mundo del temible T-Rex.</p>
+            <a href="https://www.mundoprehistorico.com/portfolio/tyrannosaurus-rex/" target="_blank">
+                <img src="/Día 1/trex.jpg" alt="Foto de un Tyrannosaurus Rex." id="imagen">
+            </a>
+        </div>
+
+</div>
+</section>
+
+<section class="section2">
+    <div class="div1">
+        <p>Descubre el mundo de los Carnotaurus.</p>
+        <a href="https://www.mundoprehistorico.com/portfolio/carnotaurus/" target="_blank">
+            <img src="/Día 1/carnotaurio.jpg" alt="Foto de un Carnotaurus." id="imagen">
+        </a>
+    </div>
+
+    <div class="div1">
+        <p>¿Qué tan rápido van los velocirraptores?</p>
+        <a href="https://www.mundoprehistorico.com/portfolio/velociraptor/#:~:text=Velociraptor%20del%20lat%C3%ADn%2C%20'ladr%C3%B3n,lo%20que%20es%20hoy%20Asia."
+            target="_blank">
+            <img src="/Día 1/velociraptor.jpg" alt="Foto de un Velocirraptor." id="imagen">
+        </a>
+    </div>
+
+    <div class="div1">
+        <p>Descubre la armadura de los Anquilosaurios.</p>
+        <a href="https://www.mundoprehistorico.com/portfolio/tyrannosaurus-rex/" target="_blank">
+            <img src="/Día 1/bumpy.jpg" alt="Foto de un Anquilosaurio." id="imagen" width="300px" height="440px">
+        </a>
+    </div>
+
+    </div>
+</section>
+
+<button id="rotateBtn"> Rotar </button>
+<button id="cambiarcol"> Cambiar color </button>
+
+
+<script>
+    const button = document.getElementById("cambiarcol");
+    const navbar = document.getElementById("colores");
+    button.addEventListener("click", () => {
+        if (navbar.style.backgroundColor === 'rgb(153, 141, 141)') {
+            navbar.style.backgroundColor = "#D30069"
+        }
+        else {
+            navbar.style.backgroundColor = "rgb(153, 141, 141)"
+        }
+    })
+    
+    let currentRotation = 0;
+    document.getElementById('rotateBtn').addEventListener('click', () => {
+        currentRotation += 90;
+        document.querySelectorAll('#imagen, #imagen2, #imagen3').forEach((img) => {
+            img.style.transform = 'rotate(' + currentRotation + "deg)";
+        });
+    })
+</script>
+</div>
+</body>
+
+</html>

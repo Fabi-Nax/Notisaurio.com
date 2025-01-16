@@ -1,0 +1,68 @@
+.section1{
+    display:flex;
+    align-items: center;
+    justify-content:space-evenly;
+    flex-direction: row;
+}
+
+.div1 {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.div1 img {
+    margin: 10px;
+    width: 600px;
+    border-radius: 20px;
+}
+
+.div1 p {
+    display:block;
+    margin: 10px;
+    font-size: 40px;
+    color: #333;
+    height: 50px;
+    background-color: rgb(222, 196, 177);
+    border-radius: 15px;
+}
+
+.colores{
+    font-size: 30px;
+    height: 40px;
+    background-color: #998d8d;
+    border-radius: 20px;
+    padding:10px;
+    display: flex;
+    justify-content: left;
+    flex-direction: row-reverse;
+}
+
+.lupa{
+    width:40px;
+    border: 1px solid white;
+    border-radius: 100px;
+    background-color: white;
+    margin-right:20px;
+}
+
+body{
+    background-image: url(https://cdn.pixabay.com/photo/2024/05/05/09/49/rain-forest-8740848_1280.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+#imagen {
+    transition: transform 0.3s ease;
+}
+
+.section2{
+    display:flex;
+    align-items: center;
+    justify-content:space-evenly;
+    flex-direction: row;
+}
